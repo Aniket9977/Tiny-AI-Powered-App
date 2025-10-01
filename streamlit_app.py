@@ -26,8 +26,8 @@ def ask_groq(question: str, model: str = MODEL) -> str:
     return completion.choices[0].message.content.strip()
 
 # --- Streamlit UI ---
-st.set_page_config(page_title="Groq Q&A Bot", page_icon="🤖")
-st.title("🤖 Groq Q&A Bot")
+st.set_page_config(page_title="Groq Q&A Bot")
+st.title(" Groq Q&A Bot")
 st.write("Ask any question below and get instant answers powered by **Groq** models.")
 
 # Input
